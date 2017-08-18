@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PutItOnMyTabBar_Example' do
+  pod 'PutItOnMyTabBar', :path => '../'
+
+  target 'PutItOnMyTabBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

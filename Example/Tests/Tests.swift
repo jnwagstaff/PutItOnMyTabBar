@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import PutItOnMyTabBar
+//import PutItOnMyTabBar
 
 class Tests: XCTestCase {
     

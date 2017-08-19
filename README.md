@@ -51,45 +51,45 @@ To get the full benefits import `PutItOnMyTabBar` in your TabBarController file:
 import PutItOnMyTabBar
 ```
 
-Simply inherit 'PutItOnMyTabBar' and override the neccessary functions to customize!
+Simply inherit 'PutItOnMyTabBarController' and override the neccessary functions to customize!
 
 
 ```swift
 class MyTabBarController: PutItOnMyTabBarController{
     // MARK: Mandatory Functions Child Class must override
     //Specifies how many tabs there are
-    open func numberOfTabs() -> Int{
+    override func numberOfTabs() -> Int{
         return 3
     }
 
     //Gives TabBar all of the images it needs for when a tab is highlighted (in order of Tabs)
-    open func highLightedImages() -> [UIImage] {
+    override func highLightedImages() -> [UIImage] {
         return [image1, image2, image3]
     }
 
     //Gives TabBar all of the images it needs for when a tab is not selected (in order of Tabs) 
-    open func unHighlightedImages() -> [UIImage] {
+    override func unHighlightedImages() -> [UIImage] {
         return [image1, image2, image3]
     }
 
     // MARK: Optional Overrides 
     // Gives Background to Tab Bar - Default is white 
-    open func backgroundColor() -> UIColor{
+    override func backgroundColor() -> UIColor{
         return .white
     }
 
     // Optional Slider View that moves to selected Tab - Default is clear
-    open func sliderColor() -> UIColor {
+    override func sliderColor() -> UIColor {
         return .clear
     }
 
     // Sets the height of a slider as a percentage of the total tab bar height - Default is 10%
-    open func sliderHeightMultiplier() -> CGFloat {
+    override func sliderHeightMultiplier() -> CGFloat {
         return 0.1
     }
 
     // Sets the sliders width as a percentage of each tab bars width - Default is 100%
-    open func sliderWidthMultiplier() -> CGFloat {
+    override func sliderWidthMultiplier() -> CGFloat {
         return 1.0
     }
 }

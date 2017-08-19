@@ -25,6 +25,12 @@
 - iOS 10.0+
 - Xcode 8.0
 
+## Features
+
+- Easy to implement
+- Change slider width and height
+- Change colors of any element 
+
 ## Installation
 
 ### CocoaPods ☕️

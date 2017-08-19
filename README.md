@@ -1,12 +1,8 @@
-# PutItOnMyTabBar
-
+# PutItOnMyTabBar 🍻
 [![CI Status](http://img.shields.io/travis/jnwagstaff/PutItOnMyTabBar.svg?style=flat)](https://travis-ci.org/jnwagstaff/PutItOnMyTabBar)
 [![Version](https://img.shields.io/cocoapods/v/PutItOnMyTabBar.svg?style=flat)](http://cocoapods.org/pods/PutItOnMyTabBar)
 [![License](https://img.shields.io/cocoapods/l/PutItOnMyTabBar.svg?style=flat)](http://cocoapods.org/pods/PutItOnMyTabBar)
 [![Platform](https://img.shields.io/cocoapods/p/PutItOnMyTabBar.svg?style=flat)](http://cocoapods.org/pods/PutItOnMyTabBar)
-
-
-# PutItOnMyTabBar 🍻
 > A subclass of UITabBarController that is customizable 
 
 ## Requirements

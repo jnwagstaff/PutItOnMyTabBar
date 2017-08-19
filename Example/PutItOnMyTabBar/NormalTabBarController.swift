@@ -42,6 +42,7 @@ class NormalTabBarController : PutItOnMyTabBarController {
         viewControllers = [homeNav, excursionNav, recordNav, mapNav, tackleNav]
     }
     
+    // MARK: Overrides for PutItOnMyTabBar
     override func numberOfTabs() -> Int {
         return 5
     }
@@ -52,22 +53,6 @@ class NormalTabBarController : PutItOnMyTabBarController {
     
     override func unHighlightedImages() -> [UIImage] {
         return [#imageLiteral(resourceName: "home"), #imageLiteral(resourceName: "excursion"), #imageLiteral(resourceName: "record"), #imageLiteral(resourceName: "map"), #imageLiteral(resourceName: "tackle")]
-    }
-    
-    override func backgroundColor() -> UIColor{
-        return .white
-    }
-    
-    override func sliderColor() -> UIColor {
-        return .black
-    }
-    
-    override func sliderHeightMultiplier() -> CGFloat {
-        return 0.1
-    }
-    
-    override func sliderWidthMultiplier() -> CGFloat {
-        return 0.1
     }
     
 }

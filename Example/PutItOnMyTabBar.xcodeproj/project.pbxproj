@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		28D010246BBF0682E7385C1E /* Pods_PutItOnMyTabBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC72A285A4B1809F46C1ED2F /* Pods_PutItOnMyTabBar_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* NormalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* NormalTabBarController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -23,6 +23,12 @@
 		A8EC91941F47CEFF003B2324 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC918A1F47CEFF003B2324 /* MapView.swift */; };
 		A8EC91951F47CEFF003B2324 /* TackleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC918B1F47CEFF003B2324 /* TackleViewController.swift */; };
 		A8EC91961F47CEFF003B2324 /* TackleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC918C1F47CEFF003B2324 /* TackleView.swift */; };
+		A8EC919B1F47D3E6003B2324 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC919A1F47D3E6003B2324 /* MainViewController.swift */; };
+		A8EC919D1F47D3F9003B2324 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC919C1F47D3F9003B2324 /* MainView.swift */; };
+		A8EC919F1F47D44E003B2324 /* UIView+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC919E1F47D44E003B2324 /* UIView+Extras.swift */; };
+		A8EC91A11F47D638003B2324 /* SliderTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC91A01F47D638003B2324 /* SliderTabBarController.swift */; };
+		A8EC91A31F47D687003B2324 /* UIColor+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC91A21F47D687003B2324 /* UIColor+Extras.swift */; };
+		A8EC91A51F47D75F003B2324 /* BackgroundTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC91A41F47D75F003B2324 /* BackgroundTabBarController.swift */; };
 		B53E30BA86B301D76D735C25 /* Pods_PutItOnMyTabBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB88CF3DF9A61FC876ED838 /* Pods_PutItOnMyTabBar_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +50,7 @@
 		607FACD01AFB9204008FA782 /* PutItOnMyTabBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PutItOnMyTabBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* NormalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTabBarController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* PutItOnMyTabBar_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PutItOnMyTabBar_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +68,12 @@
 		A8EC918A1F47CEFF003B2324 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A8EC918B1F47CEFF003B2324 /* TackleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TackleViewController.swift; sourceTree = "<group>"; };
 		A8EC918C1F47CEFF003B2324 /* TackleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TackleView.swift; sourceTree = "<group>"; };
+		A8EC919A1F47D3E6003B2324 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A8EC919C1F47D3F9003B2324 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A8EC919E1F47D44E003B2324 /* UIView+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extras.swift"; sourceTree = "<group>"; };
+		A8EC91A01F47D638003B2324 /* SliderTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTabBarController.swift; sourceTree = "<group>"; };
+		A8EC91A21F47D687003B2324 /* UIColor+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extras.swift"; sourceTree = "<group>"; };
+		A8EC91A41F47D75F003B2324 /* BackgroundTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTabBarController.swift; sourceTree = "<group>"; };
 		BC72A285A4B1809F46C1ED2F /* Pods_PutItOnMyTabBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PutItOnMyTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB88CF3DF9A61FC876ED838 /* Pods_PutItOnMyTabBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PutItOnMyTabBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6969AD9CB0AE854C4108DF /* Pods-PutItOnMyTabBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PutItOnMyTabBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PutItOnMyTabBar_Example/Pods-PutItOnMyTabBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,11 +134,8 @@
 		607FACD21AFB9204008FA782 /* Example PutItOnMyTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				A8EC91821F47CEDB003B2324 /* ViewControllers */,
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				A8EC91981F47D392003B2324 /* App Files */,
+				A8EC91991F47D3B2003B2324 /* MainApplication */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example PutItOnMyTabBar";
@@ -177,7 +186,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A8EC91821F47CEDB003B2324 /* ViewControllers */ = {
+		A8EC91821F47CEDB003B2324 /* BlankViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				A8EC91831F47CEFF003B2324 /* HomeViewController.swift */,
@@ -191,7 +200,40 @@
 				A8EC918B1F47CEFF003B2324 /* TackleViewController.swift */,
 				A8EC918C1F47CEFF003B2324 /* TackleView.swift */,
 			);
-			name = ViewControllers;
+			name = BlankViewControllers;
+			sourceTree = "<group>";
+		};
+		A8EC91971F47D373003B2324 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* NormalTabBarController.swift */,
+				A8EC91A01F47D638003B2324 /* SliderTabBarController.swift */,
+				A8EC91A41F47D75F003B2324 /* BackgroundTabBarController.swift */,
+			);
+			name = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		A8EC91981F47D392003B2324 /* App Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC91A21F47D687003B2324 /* UIColor+Extras.swift */,
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+			);
+			name = "App Files";
+			sourceTree = "<group>";
+		};
+		A8EC91991F47D3B2003B2324 /* MainApplication */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC919E1F47D44E003B2324 /* UIView+Extras.swift */,
+				A8EC919A1F47D3E6003B2324 /* MainViewController.swift */,
+				A8EC919C1F47D3F9003B2324 /* MainView.swift */,
+				A8EC91971F47D373003B2324 /* TabBarControllers */,
+				A8EC91821F47CEDB003B2324 /* BlankViewControllers */,
+			);
+			name = MainApplication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,15 +446,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* NormalTabBarController.swift in Sources */,
+				A8EC919D1F47D3F9003B2324 /* MainView.swift in Sources */,
+				A8EC919B1F47D3E6003B2324 /* MainViewController.swift in Sources */,
 				A8EC918E1F47CEFF003B2324 /* HomeView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				A8EC919F1F47D44E003B2324 /* UIView+Extras.swift in Sources */,
 				A8EC91911F47CEFF003B2324 /* RecordViewController.swift in Sources */,
 				A8EC91931F47CEFF003B2324 /* MapViewController.swift in Sources */,
 				A8EC918F1F47CEFF003B2324 /* ExcursionViewController.swift in Sources */,
+				A8EC91A31F47D687003B2324 /* UIColor+Extras.swift in Sources */,
 				A8EC91951F47CEFF003B2324 /* TackleViewController.swift in Sources */,
 				A8EC91921F47CEFF003B2324 /* RecordView.swift in Sources */,
+				A8EC91A51F47D75F003B2324 /* BackgroundTabBarController.swift in Sources */,
 				A8EC91941F47CEFF003B2324 /* MapView.swift in Sources */,
+				A8EC91A11F47D638003B2324 /* SliderTabBarController.swift in Sources */,
 				A8EC918D1F47CEFF003B2324 /* HomeViewController.swift in Sources */,
 				A8EC91961F47CEFF003B2324 /* TackleView.swift in Sources */,
 				A8EC91901F47CEFF003B2324 /* ExcursionView.swift in Sources */,

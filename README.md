@@ -44,6 +44,9 @@ import PutItOnMyTabBar
 ```
 
 Simply inherit 'PutItOnMyTabBar' and override the neccessary functions to customize!
+Clone the repo to checkout the example app
+
+
 ```swift
 class MyTabBarController: PutItOnMyTabBarController{
     // MARK: Mandatory Functions Child Class must override

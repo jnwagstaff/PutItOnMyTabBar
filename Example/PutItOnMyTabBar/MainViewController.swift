@@ -45,7 +45,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,6 +58,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
             cell.textLabel?.text = "Slider Tab Bar"
         case 2:
             cell.textLabel?.text = "Background Tab Bar"
+        case 3:
+            cell.textLabel?.text = "Small Slider Tab Bar"
         default:
             break
         }
@@ -74,6 +76,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
             vc = SliderTabBarController()
         case 2:
             vc = BackgroundTabBarController()
+        case 3:
+            vc = SmallSliderTabBarController()
         default:
             break
         }

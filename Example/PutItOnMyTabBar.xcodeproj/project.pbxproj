@@ -29,6 +29,7 @@
 		A8EC91A11F47D638003B2324 /* SliderTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC91A01F47D638003B2324 /* SliderTabBarController.swift */; };
 		A8EC91A31F47D687003B2324 /* UIColor+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC91A21F47D687003B2324 /* UIColor+Extras.swift */; };
 		A8EC91A51F47D75F003B2324 /* BackgroundTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC91A41F47D75F003B2324 /* BackgroundTabBarController.swift */; };
+		A8EC91A91F47F262003B2324 /* SmallSliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC91A81F47F262003B2324 /* SmallSliderController.swift */; };
 		B53E30BA86B301D76D735C25 /* Pods_PutItOnMyTabBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB88CF3DF9A61FC876ED838 /* Pods_PutItOnMyTabBar_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		A8EC91A01F47D638003B2324 /* SliderTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTabBarController.swift; sourceTree = "<group>"; };
 		A8EC91A21F47D687003B2324 /* UIColor+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extras.swift"; sourceTree = "<group>"; };
 		A8EC91A41F47D75F003B2324 /* BackgroundTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundTabBarController.swift; sourceTree = "<group>"; };
+		A8EC91A81F47F262003B2324 /* SmallSliderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallSliderController.swift; sourceTree = "<group>"; };
 		BC72A285A4B1809F46C1ED2F /* Pods_PutItOnMyTabBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PutItOnMyTabBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB88CF3DF9A61FC876ED838 /* Pods_PutItOnMyTabBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PutItOnMyTabBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6969AD9CB0AE854C4108DF /* Pods-PutItOnMyTabBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PutItOnMyTabBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PutItOnMyTabBar_Example/Pods-PutItOnMyTabBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				607FACD71AFB9204008FA782 /* NormalTabBarController.swift */,
 				A8EC91A01F47D638003B2324 /* SliderTabBarController.swift */,
+				A8EC91A81F47F262003B2324 /* SmallSliderController.swift */,
 				A8EC91A41F47D75F003B2324 /* BackgroundTabBarController.swift */,
 			);
 			name = TabBarControllers;
@@ -458,6 +461,7 @@
 				A8EC919D1F47D3F9003B2324 /* MainView.swift in Sources */,
 				A8EC919B1F47D3E6003B2324 /* MainViewController.swift in Sources */,
 				A8EC918E1F47CEFF003B2324 /* HomeView.swift in Sources */,
+				A8EC91A91F47F262003B2324 /* SmallSliderController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A8EC919F1F47D44E003B2324 /* UIView+Extras.swift in Sources */,
 				A8EC91911F47CEFF003B2324 /* RecordViewController.swift in Sources */,

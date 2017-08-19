@@ -45,7 +45,7 @@ import PutItOnMyTabBar
 
 Simply inherit 'PutItOnMyTabBar' and override the neccessary functions to customize!
 ```swift
-class MyTabBar: PutItOnMyTabBar{
+class MyTabBarController: PutItOnMyTabBarController{
     // MARK: Mandatory Functions Child Class must override
     //Specifies how many tabs there are
     open func numberOfTabs() -> Int{

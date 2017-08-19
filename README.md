@@ -7,8 +7,13 @@
 
 ## Examples 
 
+### Normal 
 ![alt text](https://github.com/jnwagstaff/PutItOnMyTabBar/blob/master/gifs/normalGif.gif)
+
+### Slider 
 ![alt text](https://github.com/jnwagstaff/PutItOnMyTabBar/blob/master/gifs/sliderGif.gif)
+
+### Background 
 ![alt text](https://github.com/jnwagstaff/PutItOnMyTabBar/blob/master/gifs/backgroundGif.gif)
 
 

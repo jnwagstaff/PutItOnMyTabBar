@@ -5,6 +5,13 @@
 [![Platform](https://img.shields.io/cocoapods/p/PutItOnMyTabBar.svg?style=flat)](http://cocoapods.org/pods/PutItOnMyTabBar)
 > A subclass of UITabBarController that is customizable 
 
+## Examples 
+
+![alt text](https://github.com/jnwagstaff/PutItOnMyTabBar/blob/master/gifs/normalGif.gif)
+![alt text](https://github.com/jnwagstaff/PutItOnMyTabBar/blob/master/gifs/sliderGif.gif)
+![alt text](https://github.com/jnwagstaff/PutItOnMyTabBar/blob/master/gifs/backgroundGif.gif)
+
+
 ## Requirements
 
 - Swift 3.0

@@ -16,6 +16,8 @@
 ### Background 
 ![alt text](https://github.com/jnwagstaff/PutItOnMyTabBar/blob/master/gifs/backgroundGif.gif)
 
+### Small
+![alt text](https://github.com/jnwagstaff/PutItOnMyTabBar/blob/master/gifs/smallSliderGif.gif)
 
 ## Requirements
 

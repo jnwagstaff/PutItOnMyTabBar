@@ -1,0 +1,22 @@
+{
+  "name": "PutItOnMyTabBar",
+  "version": "0.1.0",
+  "summary": "A short description of PutItOnMyTabBar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jnwagstaff/PutItOnMyTabBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jnwagstaff": "jnwagstaff@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jnwagstaff/PutItOnMyTabBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PutItOnMyTabBar/Classes/**/*"
+}

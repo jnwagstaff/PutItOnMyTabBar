@@ -1,0 +1,6 @@
+framework module Pods_PutItOnMyTabBar_Tests {
+  umbrella header "Pods-PutItOnMyTabBar_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

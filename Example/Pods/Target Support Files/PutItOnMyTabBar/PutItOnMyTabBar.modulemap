@@ -1,0 +1,6 @@
+framework module PutItOnMyTabBar {
+  umbrella header "PutItOnMyTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

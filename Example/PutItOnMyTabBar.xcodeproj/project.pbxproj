@@ -135,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				A8EC91981F47D392003B2324 /* App Files */,
+				A8EC91A61F47D837003B2324 /* Class Extensions */,
 				A8EC91991F47D3B2003B2324 /* MainApplication */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -216,7 +217,6 @@
 		A8EC91981F47D392003B2324 /* App Files */ = {
 			isa = PBXGroup;
 			children = (
-				A8EC91A21F47D687003B2324 /* UIColor+Extras.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -227,13 +227,21 @@
 		A8EC91991F47D3B2003B2324 /* MainApplication */ = {
 			isa = PBXGroup;
 			children = (
-				A8EC919E1F47D44E003B2324 /* UIView+Extras.swift */,
 				A8EC919A1F47D3E6003B2324 /* MainViewController.swift */,
 				A8EC919C1F47D3F9003B2324 /* MainView.swift */,
 				A8EC91971F47D373003B2324 /* TabBarControllers */,
 				A8EC91821F47CEDB003B2324 /* BlankViewControllers */,
 			);
 			name = MainApplication;
+			sourceTree = "<group>";
+		};
+		A8EC91A61F47D837003B2324 /* Class Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC91A21F47D687003B2324 /* UIColor+Extras.swift */,
+				A8EC919E1F47D44E003B2324 /* UIView+Extras.swift */,
+			);
+			name = "Class Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

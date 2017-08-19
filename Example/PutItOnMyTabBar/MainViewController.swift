@@ -28,7 +28,9 @@ class MainViewController: UIViewController {
     /// Setup View upon loading ViewController (e.g. add targets to buttons, update labels with data, etc.)
     func setupViewOnLoad() {
         baseView.table.delegate = self
-        baseView.table.dataSource = self 
+        baseView.table.dataSource = self
+        
+        title = "Example TabBars 🍻"
     }
     
     override func viewDidLoad() {

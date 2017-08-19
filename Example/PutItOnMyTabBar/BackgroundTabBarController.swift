@@ -56,11 +56,11 @@ class BackgroundTabBarController: PutItOnMyTabBarController{
     }
     
     override func backgroundColor() -> UIColor{
-        return UIColor.fromHex(rgbValue: 0xA3443F, alpha: 0.1)
+        return UIColor.fromHex(rgbValue: 0xF2E9DE, alpha: 0.95)
     }
     
     override func sliderColor() -> UIColor {
-        return UIColor.fromHex(rgbValue: 0xA3443F, alpha: 0.75)
+        return .white
     }
     
     override func sliderHeightMultiplier() -> CGFloat {

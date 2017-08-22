@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PutItOnMyTabBar'
-  s.version          = '1.1'
+  s.version          = '1.2'
   s.summary          = 'A subclass of UITabBarController that is customizable.'
 
 # This description is used to generate tags and improve search results.

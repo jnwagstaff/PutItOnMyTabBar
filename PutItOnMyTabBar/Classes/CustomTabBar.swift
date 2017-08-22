@@ -17,6 +17,7 @@ protocol CustomTabBarDelegate {
     func sliderColor() -> UIColor
     func sliderHeightMultiplier() -> CGFloat
     func sliderWidthMultiplier() -> CGFloat
+    func animationDuration() -> Double
 }
 
 class CustomTabBar: UIView {
@@ -120,11 +121,9 @@ class CustomTabBar: UIView {
         
         NSLayoutConstraint.activate(sliderConstraints)
         
-//        self.isUserInteractionEnabled = false
-        UIView.animate(withDuration: 0.35, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: delegate.animationDuration(), delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
             self.layoutIfNeeded()
         }, completion: { _ in
-//            self.isUserInteractionEnabled = true
         })
 
     }

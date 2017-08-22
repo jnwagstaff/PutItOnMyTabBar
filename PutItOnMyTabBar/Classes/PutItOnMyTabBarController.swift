@@ -82,4 +82,9 @@ extension PutItOnMyTabBarController: CustomTabBarDelegate{
         return 1.0
     }
     
+    // Sets the animation duration for the slider default is 0.35 
+    open func animationDuration() -> Double {
+        return 0.35 
+    }
+    
 }

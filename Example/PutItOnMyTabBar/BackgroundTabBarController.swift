@@ -70,4 +70,8 @@ class BackgroundTabBarController: PutItOnMyTabBarController{
     override func sliderWidthMultiplier() -> CGFloat {
         return 1
     }
+    
+    override func animationDuration() -> Double {
+        return 0.0 
+    }
 }

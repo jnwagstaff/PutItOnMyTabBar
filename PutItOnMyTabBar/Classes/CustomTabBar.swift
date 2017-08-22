@@ -18,6 +18,10 @@ protocol CustomTabBarDelegate {
     func sliderHeightMultiplier() -> CGFloat
     func sliderWidthMultiplier() -> CGFloat
     func animationDuration() -> Double
+    func tabBarType() -> TabBarItemType
+    func titles() -> [String]
+    func fontForTitles() -> UIFont
+    func titleColors() -> (UIColor, UIColor)
 }
 
 class CustomTabBar: UIView {
@@ -31,6 +35,11 @@ class CustomTabBar: UIView {
     
     var unHighlightedImages : [UIImage] = []
     var highlightedImages : [UIImage] = []
+    
+    var titles : [String] = []
+    var titleFont : UIFont?
+    
+    var titleColors: (UIColor, UIColor) = (.white, .white)
     
     var sliderContainerView = UIView()
     var sliderView = UIView()
@@ -49,6 +58,10 @@ class CustomTabBar: UIView {
     fileprivate func setDataFromDelegate(){
         unHighlightedImages = delegate.unHighlightedImages()
         highlightedImages = delegate.highLightedImages()
+        
+        titles = delegate.titles()
+        titleFont = delegate.fontForTitles()
+        titleColors = delegate.titleColors()
     }
     
     fileprivate func configureSubviews(){
@@ -62,11 +75,29 @@ class CustomTabBar: UIView {
         //Set Attributes for each Tab
         for index in 1...delegate.numberOfTabs(){
             let newTab = TabBarItem()
-            if index == 1{
-                newTab.iconView.image = highlightedImages[index - 1]
+            if delegate.tabBarType() == .icon{
+                newTab.setupTabBarItem(type: .icon)
+                if index == 1{
+                    newTab.iconView.image = highlightedImages[index - 1]
+                }else{
+                    newTab.iconView.image = unHighlightedImages[index - 1]
+                }
             }else{
-                newTab.iconView.image = unHighlightedImages[index - 1]
+                newTab.setupTabBarItem(type: .label)
+                if index == 1{
+                    newTab.iconView.image = highlightedImages[index - 1]
+                    newTab.label.text = titles[index - 1]
+                    newTab.label.font = titleFont
+                    newTab.label.textColor = titleColors.0
+                }else{
+                    newTab.iconView.image = unHighlightedImages[index - 1]
+                    newTab.label.text = titles[index - 1]
+                    newTab.label.font = titleFont
+                    newTab.label.textColor = titleColors.1
+                }
             }
+            
+            
             
             newTab.containerButton.addTarget(self, action: #selector(CustomTabBar.barItemTapped(_:)), for: UIControlEvents.touchUpInside)
             tabBarItems.append(newTab)
@@ -105,11 +136,13 @@ class CustomTabBar: UIView {
     func unhighlightPrevious(index: Int){
         //Set Image
         tabBarItems[index].iconView.image = unHighlightedImages[index]
+        tabBarItems[index].label.textColor = titleColors.1
     }
     
     func highlightSelected(index: Int){
         //Set Image
         tabBarItems[index].iconView.image = highlightedImages[index]
+        tabBarItems[index].label.textColor = titleColors.0
         
         //Animate Slider
         NSLayoutConstraint.deactivate(sliderConstraints)

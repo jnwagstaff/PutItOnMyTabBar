@@ -74,4 +74,22 @@ class BackgroundTabBarController: PutItOnMyTabBarController{
     override func animationDuration() -> Double {
         return 0.0 
     }
+    
+    // MARK: Titles Defaults to none
+    override func tabBarType() -> TabBarItemType {//Return .label
+        return .label
+    }
+    
+    override func titles() -> [String] {
+        return ["Home", "Excursions", "Record", "Map", "TackleBox"]
+    }
+    
+    override func titleColors() -> (UIColor, UIColor) {
+        return (UIColor.fromHex(rgbValue: 0xF2E9DE, alpha: 0.95), .darkGray)
+    }
+    
+    override func fontForTitles() -> UIFont {
+        return UIFont.systemFont(ofSize: 10)
+    }
+
 }

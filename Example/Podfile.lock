@@ -1,5 +1,5 @@
 PODS:
-  - PutItOnMyTabBar (0.1.0)
+  - PutItOnMyTabBar (1.1)
 
 DEPENDENCIES:
   - PutItOnMyTabBar (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  PutItOnMyTabBar: 2de624aa56fd77300b54a47e0782c2b8bc8546e3
+  PutItOnMyTabBar: ce5692052df686127bc98ee7e7f8bc2b84539823
 
 PODFILE CHECKSUM: a169c27adf5867d0c5be09ee4407d909f4d97826
 
